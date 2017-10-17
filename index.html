@@ -9,41 +9,81 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
-  <style>
+
+
+<style>
 #gridContainer{
   display: grid;
   grid-template-rows: 1em 50vh auto 10em;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-areas: "navi navi navi navi"
-                       "heros heros heros heros"
+                       "heroes heroes heroes heroes"
                        ". contents contents2 ."
                        "footers footers footers footers";
 }
 #nav{
   grid-area: navi;
+
+  width: 100%;
+  height: 100%;
 }
 #hero{
   grid-area: heroes;
+  background-color: blue;
+  width: 100%;
+  height: auto;
 }
 #content{
   grid-area: contents;
+  background-color: green;
+  width: 100%;
+  height: auto;
 }
 #content2{
   grid-area: contents2;
+  background-color: purple;
+  width: 100%;
+  height: auto;
 }
 #footer{
-  grid-area:footers;
+  grid-area: footers;
+  background-color: orange;
+  width: 100%;
+  height: auto;
 }
 </style>
 
   <body id='gridContainer'>
-    <h1>CSS GRID</h1>
 
-<nav id='nav'>nav</nav>
-<hero id='hero'>hero</div>></hero>
+
+<nav id='nav'>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+</nav>
+
+
+<hero id='hero'>hero</hero>
 <content id='content'>content</content>
 <content2 id='content2'>content2</content2>
 <footer id='footer'>footer</footer>
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
